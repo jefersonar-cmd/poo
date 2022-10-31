@@ -16,11 +16,11 @@ Foi feito uma tela na página index, onde é apresentado todos os arquivos .php 
   
   - Compuser:
     
-    - ![](C:\Users\lordo\AppData\Roaming\marktext\images\2022-10-31-12-31-59-image.png)
+    - ![](https://i.imgur.com/qZUcjnJ.png)
   
   - Constructor:
     
-    - ![](C:\Users\lordo\AppData\Roaming\marktext\images\2022-10-31-12-37-52-image.png)
+    - ![](https://i.imgur.com/BI9gEBm.png)
 
 ---
 
@@ -105,7 +105,7 @@ foreach ( $links as $link ) {
 
 Usada para tratar o nome de cada arquivo, deixando do o mais legível na hora de apresentá-lo.
 
-![](C:\Users\lordo\AppData\Roaming\marktext\images\2022-10-31-13-50-13-image.png)
+![](https://i.imgur.com/lV5VTZY.png)
 
 O segundo:
 
@@ -142,9 +142,9 @@ if ($page != '' and $page != 'home'){
 
 Este irá tratar o array criado na função **ListFiles()**, incluindo na index o conteúdo do arquivo puxado pela função e seu código fonte. Onde tem uma condição caso $page tenha algum valor dentro da variável, irá apresentar o conteúdo e caso não tenha ou seja igual a 'Home', será apresentado o certificado de conclusão:
 
-![](C:\Users\lordo\AppData\Roaming\marktext\images\2022-10-31-14-21-49-image.png)
+![](https://i.imgur.com/oStsUow.png)
 
-![](C:\Users\lordo\AppData\Roaming\marktext\images\2022-10-31-14-22-22-image.png)
+![](https://i.imgur.com/UwcEckF.png)
 
 ---
 
