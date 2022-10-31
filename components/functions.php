@@ -14,6 +14,8 @@ function ListFolder($path){
                 }
                 else{
                     $replace = str_replace(".php", "", $file);
+                    $replace = str_replace('_', ' ', $replace);
+                    $replace = ucwords(strtolower($replace));
                     //if ($replace != 'produto'){
                         echo "<li><a href='?page=$file'>$replace</a></li>";
                     //}

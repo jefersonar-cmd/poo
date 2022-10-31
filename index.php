@@ -17,12 +17,25 @@ include 'components/functions.php';
             <?php ListFolder('aulas'); ?>
         </div>
         <div class="body">
-            <h1>Resultado: </h1>
-            <hr />
-            <div class="content">
+            <h1>
+                Resultado: 
                 <?php
                     $page = @$_GET['page'];
                     $links = ListFiles('aulas');
+                    foreach ( $links as $link ) {
+                        if ($link == $page) {
+                            $link = str_replace('.php', '', $link);
+                            $link = str_replace('_', ' ', $link);
+                            $link = ucwords(strtolower($link));
+                            echo $link;
+                            break;
+                        }
+                    }
+                ?>
+            </h1>
+            <hr />
+            <div class="content">
+                <?php
                     if ($page != '' and $page != 'home'){
                         for ($i = 0; $i < count($links); $i++){
                             if($links[$i] == $page){
@@ -44,12 +57,12 @@ include 'components/functions.php';
                         }
                         echo "</textarea>";
                     }elseif($page=='home' or $page==''){
-                        ?>
+                        echo '
                             <p>Aqui está o certificado de conclusão do curso: <i>PHP Orientado a Objetos</i></p>
                             <hr />
                             <h2>Certificado</h2>
                             <img src="./assets/certif.png" alt="CERTIFICADO" class="cert" disabled="disabled" />
-                        <?php
+                        ';
                     }
                 ?>
             </div>
