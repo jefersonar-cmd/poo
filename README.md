@@ -10,7 +10,7 @@ Foi feito uma tela na página index, onde é apresentado todos os arquivos .php 
 
 - HOME
   
-  - ![](C:\Users\lordo\AppData\Roaming\marktext\images\2022-10-31-12-27-13-image.png)
+  - ![](https://imgur.com/kTPVR6Y)
 
 - Other Pages:
   
@@ -115,7 +115,7 @@ if ($page != '' and $page != 'home'){
          if($links[$i] == $page){
              include 'aulas/'.$links[$i];
              echo '<br />';
-            
+
              break;
          }
      }
