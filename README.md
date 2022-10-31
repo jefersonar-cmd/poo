@@ -10,7 +10,7 @@ Foi feito uma tela na página index, onde é apresentado todos os arquivos .php 
 
 - HOME
   
-  - ![](https://imgur.com/kTPVR6Y)
+  - ![image](https://i.imgur.com/kTPVR6Y.png)
 
 - Other Pages:
   
